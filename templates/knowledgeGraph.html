@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{{url_for('static', filename='css/graph.css')}}" />
+<script src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/index_main.js')}}"></script>
+
+</head>
+<body>
+
+Hello,world!
+
+<svg width='2000' height='2000' 
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+       
+<use x='10' y='10' xlink:href="{{'static/' ~ 'program/sql/svg/sql.svg#sql'}}" />
+
+</svg>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    font-family : 'Times New Roman';
+    font-size : 12px;
+}
+
+/* 语法定义风格 */
+.syntax {
+    fill: red;
+}
+
+.identity {
+    fill: green;
+    font-style: italic;
+}
+
+.keyword {
+    fill: blue;
+    font-weight: 700;
+}
+
+
+
+.doc > rect {
+    fill: antiquewhite;
+}
+
+.doc > text {
+    font-weight: bold;
+}
+
+.tool > rect {
+    fill: blue;
+    stroke: white;
+}
+
+.tool > text {
+    font-weight: bold;
+    fill:white;
+}
+
+.comment {
+    display: none;
+}
+
+.comment > rect {
+    fill:white;
+}
+
+.comment > text {
+    font-size: 0.7rem;
+}
+
+.tree_list > rect {
+    fill: whitesmoke;
+}

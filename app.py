@@ -8,6 +8,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db = SQLAlchemy(app)
 
+from model import Knowledge
+
 @app.route('/')
 def index():
-    return render_template( 'knowledgeGraph.html' )
+    ks = Knowledge.query.all()
+
+    return render_template( 'knowledgeGraph.html', knowledges=ks )

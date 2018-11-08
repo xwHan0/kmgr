@@ -14,7 +14,9 @@ Hello,world!
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
        
-<use x='10' y='10' xlink:href="{{'static/' ~ 'program/sql/svg/sql.svg#sql'}}" />
+{% for k in knowledges %}
+    <use x='{{k.x}}' y='{{k.y}}' xlink:href="{{'static/' ~ k.svg}}" />
+{% endfor %}
 
 </svg>
 

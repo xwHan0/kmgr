@@ -15,7 +15,7 @@ Hello,world!
     xmlns:xlink="http://www.w3.org/1999/xlink">
        
 {% for k in knowledges %}
-    <use x='{{k.x}}' y='{{k.y}}' xlink:href="{{'static/' ~ k.svg}}" />
+    <use x='{{k.x}}' y='{{k.y}}' xlink:href="{{'static/' ~ k.svg}}" ><title>{{k.title}}</title></use>
 {% endfor %}
 
 </svg>

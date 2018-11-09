@@ -8,7 +8,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db = SQLAlchemy(app)
 
-from model import Knowledge
+from model.knowledge import Knowledge
 
 @app.route('/')
 def index():

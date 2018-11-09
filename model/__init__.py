@@ -1,1 +1,1 @@
-from kmgr.model.knowledge import Knowledge
+

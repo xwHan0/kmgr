@@ -4,6 +4,11 @@ body {
 }
 
 /* 语法定义风格 */
+.title {
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration:underline;
+}
 .syntax {
     fill: red;
 }

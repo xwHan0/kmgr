@@ -2,19 +2,17 @@
 
 --drop table milestones; --- Do not need when rename Table using ALTER 
 
-CREATE TABLE knowledge
+CREATE TABLE relation
 (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  grp NCHAR(126) default "",
   name NCHAR(126),
-  x INTEGER default 10,
-  y INTEGER default 10,
-  width INTEGER default 100,
-  height INTEGER default 30,
+  from_block INTEGER default 0,
+  from_port INTEGER default 0,
+  to_block INTEGER default 0,
+  to_port INTEGER default 0,
   style NCHAR(126) default "",
   href TEXT default "",
   svg TEXT default "",
-  pid INTEGER default 0,
   title TEXT default ""
 );
 

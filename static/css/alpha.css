@@ -1,0 +1,31 @@
+#main{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 2500px;
+}
+
+#management {
+    flex: 0 0 300px;
+}
+
+#graph {
+    flex: 1 1 auto;
+}
+
+.tools {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin:2px;
+    /* width: 400px; */
+}
+
+.ICON {
+    width: 40px;
+}
+
+.Summary {
+    height:32px; 
+    line-height:32px;
+}
